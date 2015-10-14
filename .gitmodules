@@ -1,0 +1,3 @@
+[submodule "NMSSH"]
+	path = NMSSH
+	url = https://github.com/sbausis/NMSSH.git
