@@ -35,6 +35,7 @@
             return Nil;
         }
     }
+    [_session.channel setDelegate:self];
     return _session;
 }
 
@@ -95,4 +96,49 @@
     return success;
 }
 
+-(BOOL)test_channel {
+    BOOL success = FALSE;
+    
+    NMSSHSession *session = self.session;
+    if (session) {
+        
+        //[session.channel setRequestPty:YES];
+        //[session.channel setPtyTerminalType:NMSSHChannelPtyTerminalVT100];
+        
+        NSError *error = Nil;
+        if ([session.channel startShell:&error] && error==Nil) {
+            
+            success = ([session.channel write:@"uname -a" error:&error timeout:[NSNumber numberWithInt:10]]);
+            //success = ([session.channel write:@"df -h" error:&error timeout:[NSNumber numberWithInt:10]]);
+            
+            //[session.channel closeShell];
+        }
+    }
+    
+    return success;
+}
+
+-(void)channel:(NMSSHChannel *)channel didReadData:(NSString *)message {
+    NSLog(@"[%@::%s] %@", channel, __FUNCTION__, message);
+}
+-(void)channel:(NMSSHChannel *)channel didReadError:(NSString *)error {
+    NSLog(@"[%@::%s] %@", channel, __FUNCTION__, error);
+    
+}
+/*-(void)channel:(NMSSHChannel *)channel didReadRawData:(NSData *)data {
+    //NSLog(@"[%@::%s] %@", channel, __FUNCTION__, data);
+    NSLog(@"[%@::%s]", channel, __FUNCTION__);
+    
+}
+-(void)channel:(NMSSHChannel *)channel didReadRawError:(NSData *)error {
+    //NSLog(@"[%@::%s] %@", channel, __FUNCTION__, error);
+    NSLog(@"[%@::%s]", channel, __FUNCTION__);
+    
+}*/
+-(void)channelShellDidClose:(NMSSHChannel *)channel {
+    NSLog(@"[%@::%s]", channel, __FUNCTION__);
+    
+}
+
 @end
+

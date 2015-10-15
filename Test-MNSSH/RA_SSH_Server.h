@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <NMSSH/NMSSH.h>
 
-@interface RA_SSH_Server : NSObject
+@interface RA_SSH_Server : NSObject <NMSSHChannelDelegate>
 
 @property NMSSHSession* session;
 
@@ -18,5 +18,6 @@
 
 -(BOOL)test_sftp;
 -(BOOL)test_command;
+-(BOOL)test_channel;
 
 @end

@@ -25,8 +25,9 @@
     self.server = [[RA_SSH_Server alloc] initWithHost:REMOTE_HOST port:REMOTE_PORT andUsername:REMOTE_USER];
     if (self.server) {
         
-        [self.server test_sftp];
-        [self.server test_command];
+        //[self.server test_sftp];
+        //[self.server test_command];
+        [self.server test_channel];
         
         self.server.session = Nil;
     }
