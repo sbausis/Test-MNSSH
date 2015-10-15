@@ -14,6 +14,7 @@
 		4738AA031BCF0379003BD65F /* Test_MNSSHTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4738AA021BCF0379003BD65F /* Test_MNSSHTests.m */; };
 		4738AA151BCF0634003BD65F /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4738AA121BCF060B003BD65F /* NMSSH.framework */; };
 		4738AA191BCF0671003BD65F /* NMSSH.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4738AA121BCF060B003BD65F /* NMSSH.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4753A1FE1BCF1E99000F4731 /* RA_SSH_Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 4753A1FD1BCF1E99000F4731 /* RA_SSH_Server.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		4738AA011BCF0379003BD65F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4738AA021BCF0379003BD65F /* Test_MNSSHTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test_MNSSHTests.m; sourceTree = "<group>"; };
 		4738AA0C1BCF060A003BD65F /* NMSSH.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NMSSH.xcodeproj; path = NMSSH/NMSSH.xcodeproj; sourceTree = "<group>"; };
+		4753A1FC1BCF1E99000F4731 /* RA_SSH_Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RA_SSH_Server.h; sourceTree = "<group>"; };
+		4753A1FD1BCF1E99000F4731 /* RA_SSH_Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RA_SSH_Server.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 			children = (
 				4738A9EE1BCF0379003BD65F /* AppDelegate.h */,
 				4738A9EF1BCF0379003BD65F /* AppDelegate.m */,
+				4753A1FC1BCF1E99000F4731 /* RA_SSH_Server.h */,
+				4753A1FD1BCF1E99000F4731 /* RA_SSH_Server.m */,
 				4738A9F31BCF0379003BD65F /* Images.xcassets */,
 				4738A9F51BCF0379003BD65F /* MainMenu.xib */,
 				4738A9EC1BCF0379003BD65F /* Supporting Files */,
@@ -284,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4738A9F21BCF0379003BD65F /* main.m in Sources */,
+				4753A1FE1BCF1E99000F4731 /* RA_SSH_Server.m in Sources */,
 				4738A9F01BCF0379003BD65F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

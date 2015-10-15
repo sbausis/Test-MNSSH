@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <NMSSH/NMSSH.h>
+#import "RA_SSH_Server.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property RA_SSH_Server* server;
 
 @end
 

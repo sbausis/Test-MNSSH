@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #define REMOTE_HOST @"192.168.1.3"
+#define REMOTE_PORT 22
 #define REMOTE_USER @"testuser"
 #define REMOTE_PASS @"testpass"
 
@@ -20,8 +21,16 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    //[self test_SSH_Session];
-    [self test_get_file_list];
+    
+    self.server = [[RA_SSH_Server alloc] initWithHost:REMOTE_HOST port:REMOTE_PORT andUsername:REMOTE_USER];
+    if (self.server) {
+        
+        [self.server test_sftp];
+        [self.server test_command];
+        
+        self.server.session = Nil;
+    }
+    
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CD61A94B-77A9-4871-8705-35515416D4E0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Test-MNSSH</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2EADB5ABE131D6BC5E92315FB58CA2E8E6E22125</key>
+		<string>https://github.com/sbausis/NMSSH.git</string>
+		<key>9E5F7AACABA3B2854301406EF567B21B7E332F2D</key>
+		<string>https://github.com/sbausis/Test-MNSSH.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Test-MNSSH.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2EADB5ABE131D6BC5E92315FB58CA2E8E6E22125</key>
+		<string>../..NMSSH</string>
+		<key>9E5F7AACABA3B2854301406EF567B21B7E332F2D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sbausis/Test-MNSSH.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9E5F7AACABA3B2854301406EF567B21B7E332F2D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9E5F7AACABA3B2854301406EF567B21B7E332F2D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Test-MNSSH</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2EADB5ABE131D6BC5E92315FB58CA2E8E6E22125</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Test-MNSSHNMSSH</string>
+		</dict>
+	</array>
+</dict>
+</plist>
